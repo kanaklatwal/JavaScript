@@ -33,3 +33,27 @@ console.log(typeof bigNumber); //bignt
 console.log(typeof outsideTemp); //object
 console.log(typeof score);//number
 console.log(typeof myFunction);// function
+
+
+
+
+//******************************************************************************************
+
+// Stack (primitive), Heap(non primitive = reference)
+
+let myYoutubeName = "Heythisthisthisthis"
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode"
+console.log(myYoutubeName);//Heythisthisthisthis
+console.log(anotherName);//chaiaurcode
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "kanak@google.com"
+console.log(userOne.email)//kanak@google.com
+console.log(userTwo.email)//kanak@google.com
