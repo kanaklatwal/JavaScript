@@ -41,3 +41,32 @@ console.log(Object.keys(tinderUser));//[ 'id', 'name', 'isLoggedIn' ]
 console.log(Object.values(tinderUser));//[ '123abc', 'Sammy', false ]
 console.log(Object.entries(tinderUser));//[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+//course.courseInstructor
+
+const {courseInstructor: instructor} = course
+//console.log(instructor);
+console.log(instructor);//hitesh
+
+// const navbar = (props.company) => {
+
+// }
+// const navbar = ({company}) => {
+
+// }
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+[
+    {},
+    {},
+    {}
+]
