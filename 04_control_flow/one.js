@@ -10,7 +10,7 @@ const isUserLogIn = true;
 //    console.log("temperature is greater than 50") 
 // }
 
-  //   <,>,<=,>=,==,!=, ===(=== check datatype also)
+  //   <,>,<=,>=,==,!=, ===(=== check datatype also), !==
 const score = 200
 if(score>100){
     const power = "fly"
@@ -21,6 +21,7 @@ if(score>100){
 
 const balance = 1000
 //if (balance>500) console.log ("test") //test
+//if (balance>500) console.log ("test"), console.log("test2"); //X 
 if(balance < 500){
     console.log("lesss than 500");
 } else if (balance < 750){
