@@ -78,13 +78,28 @@ function newGame (){
      })
 }
 
-function endGame(){
+function endGame() {
     userInput.value = '';
     userInput.setAttribute('disabled', '');
-    p.classList.add('button');
-    p.innerHTML = '<h1 id = "newGame> Start new Game</h2>';
-    startOver.appendChild(p)
     playGame = false;
-    newGame();
+
+    const newGameBtn = document.createElement('button');
+    newGameBtn.textContent = 'Start New Game';
+    newGameBtn.classList.add('new-game-btn');
+
+    startOver.appendChild(newGameBtn);
+
+    newGameBtn.addEventListener('click', function () {
+        randomNumber = Math.floor(Math.random() * 100) + 1;
+        prevGuess = [];
+        numGuess = 1;
+        guessSlot.innerHTML = '';
+        reamining.innerHTML = '10';
+        lowOrHi.innerHTML = '';
+        userInput.removeAttribute('disabled');
+        startOver.removeChild(newGameBtn);
+        playGame = true;
+    });
 }
+
 
