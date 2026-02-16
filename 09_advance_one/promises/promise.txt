@@ -1,0 +1,6 @@
+The promise object represents thee eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+Promise has three states:-
+# pending: initial state, neither fulfilled nor rejected.
+# fthaulfilled: meaning that the operation was completed successfully.
+# rejected: meaning that the operation failed.
